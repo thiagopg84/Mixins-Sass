@@ -1,0 +1,46 @@
+@mixin text($color, $size:12px, $bgcolor:transparent, $style:normal, $font:sans-serif) {
+  color: $color;
+  font-size: $size;
+  background-color: $bgcolor;
+  font-style: $style;
+  font-family: $font;
+}
+
+.erro {
+  @include text(red, 12px, #EFEFEF, null, null);
+}
+
+.sucesso {
+  @include text(green, 13px, null, null, Roboto);
+}
+
+.destaque {
+  @include text(black, 14px, null, bold, null);
+}
+
+.alerta {
+  @include text(black, null, yellow, null, null);
+}
+
+// .erro {
+//   color: red;
+//   font-size: 12px;
+//   background-color: #EFEFEF;
+// }
+
+// .sucesso {
+//   color: green;
+//   font-size: 13px;
+//   font-family: Roboto;
+// }
+
+// .destaque {
+//   color: black;
+//   font-size: 14px;
+//   font-style: bold;
+// }
+
+// .alerta {
+//   color: black;
+//   background-color: yellow;
+// }
